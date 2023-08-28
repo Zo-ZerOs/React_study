@@ -21,9 +21,14 @@ function App() {
     setPosts(updatedPosts)
   }
 
+  function feedClear() {
+    const updatedPosts = posts.filter((post) => post.id < 0);
+    setPosts(updatedPosts);
+  }
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar feedClear={feedClear} />
       <Input addPost={addPost} />
       {posts.map((post) => (
         <Post key={post.id} id={post.id} title={post.title} deletePost={deletePost} />
