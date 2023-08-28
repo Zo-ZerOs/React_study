@@ -3,6 +3,7 @@
 }
 
 body {
+  padding-top: 30px;
   margin: 0;
   background: #e9ebee;
   color: #1d2129;
@@ -12,6 +13,24 @@ body {
   color: #ffffff;
   padding: 10px;
   background: #4167b2;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.Navbar__title {
+  float: left;
+}
+
+.Feed__clear {
+  padding: 2px;
+  float: right;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000000;
+  border-color: #a5a7a9;
+  font-size: 50%;
+  background-color: #ffffff;
 }
 
 .Input, .Post {
